@@ -4,11 +4,13 @@ import javax.xml.crypto.Data;
 import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Timestamp;
+import java.util.Arrays;
 
 public class Message implements java.io.Serializable {
     private  String sendersName = "";
     private int number;
     private long messageComposeTime;
+
 
     public String getSendersName() {
         return sendersName;
