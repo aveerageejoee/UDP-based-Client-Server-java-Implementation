@@ -5,8 +5,8 @@ import java.net.DatagramSocket;
 import java.net.SocketException;
 
 public class ServerMain {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Server server = new Server(new DatagramSocket(700));
-        server.receiveMessage();
+    public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
+        Server server = new Server();
+        server.start();
     }
 }
