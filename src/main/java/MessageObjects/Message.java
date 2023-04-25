@@ -5,10 +5,17 @@ import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Message implements java.io.Serializable {
     private  String sendersName = "";
     private int number;
+
+    public AtomicInteger getNr() {
+        return nr;
+    }
+
+    AtomicInteger nr = new AtomicInteger(0);
     private long messageComposeTime;
 
 
